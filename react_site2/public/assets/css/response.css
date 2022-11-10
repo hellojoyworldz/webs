@@ -7,7 +7,7 @@
   }
   /* header */
   .gnb__list > li {
-    padding: 0 30px;
+    padding: 0 32px;
   }
   /* footer */
   .footer {
@@ -21,9 +21,24 @@
     position: relative;
     margin-bottom: 32px;
   }
+  /* main common */
+  .cm-main__header {
+    margin-bottom: 32px;
+  }
+  .cm-main__header .tit {
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
+  .cm-main__header .txt {
+    font-size: 16px;
+  }
   /* main */
+  .visual__header {
+    padding: 120px 0;
+  }
   .visual__tit {
-    font-size: 60px;
+    margin: 0 0 16px 0;
+    font-size: 48px;
   }
   .visual__txt {
     font-size: 16px;
@@ -33,6 +48,10 @@
   }
   .visual__view a {
     padding: 10px 20px;
+  }
+  .visual__slide > li img {
+    width: auto;
+    height: 500px;
   }
   .mainStep {
     padding: 60px 0;
@@ -46,8 +65,15 @@
     margin-bottom: 32px;
     text-align: center;
   }
+  .mainStep__header .tit {
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
   .mainStep__header .titBullet {
     margin: 0 auto 10px;
+  }
+  .mainStep__header .txt {
+    font-size: 16px;
   }
   .mainStep__list {
     top: -1%;
@@ -55,6 +81,13 @@
   .mainStep__list .item {
     margin: 1%;
     width: 48%;
+  }
+  .mainStep__list .tit {
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+  .mainStep__list .txt {
+    font-size: 16px;
   }
   .mainGallery {
     padding: 60px 0;
@@ -67,9 +100,18 @@
     min-width: 300px;
     margin: 1%;
   }
+  .mainGallery__list .tit {
+    font-size: 22px;
+  }
+  .mainGallery__list .view {
+    font-size: 13px;
+  }
   .mainGallery__list .thumb img {
     width: 100%;
     height: auto;
+  }
+  .mainBlog {
+    padding: 60px 0;
   }
   .mainBlog__list {
     margin: -1%;
@@ -81,6 +123,30 @@
     margin: 1%;
     width: 48%;
   }
+  .mainBlog__list .tit {
+    font-size: 22px;
+  }
+  .mainBlog__list .tit::after {
+    top: -5px;
+  }
+  .mainBlog__list .txt {
+    font-size: 16px;
+  }
+  .mainBanner .tit {
+    margin-bottom: 32px;
+    font-size: 48px;
+  }
+  .mainBanner .txt {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .mainBanner .view {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .mainReview {
+    padding: 60px 0;
+  }
   .mainReview__list {
     margin: -1%;
   }
@@ -89,6 +155,18 @@
     width: 31.3334%;
     min-width: 300px;
     height: auto;
+  }
+  .mainReview__list .txt {
+    font-size: 16px;
+  }
+  .mainReview__list .tit {
+    font-size: 22px;
+  }
+  .mainReview__list .th {
+    font-size: 13px;
+  }
+  .mainReview__list .view {
+    font-size: 13px;
   }
 }
 @media (max-width: 750px) {

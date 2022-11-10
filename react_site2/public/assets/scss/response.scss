@@ -6,8 +6,11 @@ $mainPadding: 60px;
 $mainTitSiz : 32px;
 $mainTitSubSiz : 16px;
 
-$fontLev2 : 24px;
-$fontLev4 : 13px; 
+$fontLev1 : 48px;
+$fontLev2 : $mainTitSiz;
+$fontLev3 : 22px;
+$fontLev4 : $mainTitSubSiz;
+$fontLev5 : 13px;
 
 $intervalLev1 : 32px;
 $intervalLev2 : 16px;
@@ -26,7 +29,7 @@ $intervalLev2 : 16px;
     /* header */
     .gnb__list{
         & > li{
-            padding: 0 30px;
+            padding: 0 $intervalLev1;
         }
     }
 
@@ -41,32 +44,57 @@ $intervalLev2 : 16px;
 
         &__info{
             position: relative;
-            margin-bottom: 32px;
+            margin-bottom: $intervalLev1;
+        }
+    }
+
+    /* main common */
+    .cm-main__header{
+        margin-bottom: $intervalLev1;
+
+        & .tit{
+            margin-bottom: $intervalLev2;
+            font-size: $mainTitSiz;
         }
 
-        &__copy{
-
+        & .txt{
+            font-size: $mainTitSubSiz;
         }
-
     }
 
 
     /* main */
-    .visual__tit{
-        font-size: 60px;
-    }
+    .visual{
 
-    .visual__txt{
-        font-size: $mainTitSubSiz;
-    }
+        &__header{
+            padding: 120px 0;
+        }
+        &__tit{
+            margin: 0 0 $intervalLev2 0;
+            font-size: $fontLev1;
+        }
+    
+        &__txt{
+            font-size: $mainTitSubSiz;
+        }
+    
+        &__view{
+            font-size: $mainTitSubSiz;
+    
+            & a{
+                padding: 10px 20px;
+            }
+        }
 
-    .visual__view{
-        font-size: $mainTitSubSiz;
+        &__slide{
+            & > li img{
+                width: auto;
+                height: 500px;
 
-        & a{
-            padding: 10px 20px;
+            }
         }
     }
+    
 
     .mainStep{
         padding: $mainPadding 0;
@@ -78,12 +106,20 @@ $intervalLev2 : 16px;
         &__header{
             position: relative;
             left: auto;
-            margin-bottom: 32px;
+            margin-bottom: $intervalLev1;
             text-align: center;
 
-            
+            & .tit{
+                margin-bottom: $intervalLev2;
+                font-size: $mainTitSiz;
+            }
+
             & .titBullet{
                 margin: 0 auto 10px;
+            }
+
+            & .txt{
+                font-size: $mainTitSubSiz;
             }
         }
 
@@ -93,6 +129,15 @@ $intervalLev2 : 16px;
             & .item{
                 margin: 1%;
                 width: 48%;
+            }
+
+            & .tit{
+                margin-bottom: $intervalLev2;
+                font-size: $fontLev3;
+            }
+
+            & .txt{
+                font-size: $fontLev4;
             }
         }
     }
@@ -110,36 +155,76 @@ $intervalLev2 : 16px;
                 margin: 1%;
             }
 
+            & .tit{
+                font-size: $fontLev3;
+            }
+
+            & .view{
+                font-size: $fontLev5;
+            }
+
             & .thumb {
                 & img{
                     width: 100%;
                     height: auto;
                 }
             }
+
+            
         }
     
     }
 
     .mainBlog{
+        padding: $mainPadding 0;
+
          &__list{
             margin: -1%;
 
-            .thumb{
+            & .thumb{
                 height: auto;
             }
 
-             .item{
+            & .item{
                 margin: 1%;
                 width: 48%;
-             }
+            }
 
-             .tit{
+            & .tit{
+                font-size: $fontLev3;
 
-             }
+                &::after{
+                    top: -5px;
+                }
+            }
+
+            & .txt{
+                font-size: $fontLev4;
+            }
          }
     }
 
+    .mainBanner{
+
+        & .tit{
+            margin-bottom: $intervalLev1;
+            font-size: $fontLev1;
+        }
+
+        & .txt{
+            margin-bottom: $intervalLev2;
+            font-size: $fontLev4;
+        }
+
+        & .view{
+            padding: 10px  20px;
+            font-size: $fontLev4;
+        }
+    }
+
     .mainReview{
+        padding: $mainPadding 0;
+
         &__list{
             margin: -1%;
 
@@ -148,6 +233,22 @@ $intervalLev2 : 16px;
                 width:31.3334%;
                 min-width: 300px;
                 height: auto;
+            }
+
+            & .txt{
+                font-size: $fontLev4;
+            }
+
+            & .tit{
+                font-size: $fontLev3;
+            }
+
+            & .th{
+                font-size: $fontLev5;
+            }
+
+            & .view{
+                font-size: $fontLev5;
             }
         } 
     }

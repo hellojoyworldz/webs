@@ -185,6 +185,7 @@ $mainTitSubColor: $bla777;
 
 /* main visual */
 .visual{
+
     &__header{
         position:absolute;
     }
@@ -217,6 +218,7 @@ $mainTitSubColor: $bla777;
 
     &__slide {
         text-align: center;
+        font-size: 0px;
     }
 }
 
