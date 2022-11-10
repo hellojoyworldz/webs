@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+$in : auto;
+
+$mainPadding: 60px;
+$mainTitSiz : 32px;
+$mainTitSubSiz : 16px;
+
+$fontLev2 : 24px;
+$fontLev4 : 13px; 
+
+$intervalLev1 : 32px;
+$intervalLev2 : 16px;
+
+
+@media (max-width: 1200px){
+    
+    .in{
+        width: $in;
+    }
+
+    .br__pc{
+        display: none;
+    }
+    
+    /* header */
+    .gnb__list{
+        & > li{
+            padding: 0 30px;
+        }
+    }
+
+    /* footer */
+    .footer{
+        padding:$mainPadding 0;
+        text-align: center;
+
+        & .in{
+            padding-left: 10px;
+        }
+
+        &__info{
+            position: relative;
+            margin-bottom: 32px;
+        }
+
+        &__copy{
+
+        }
+
+    }
+
+
+    /* main */
+    .visual__tit{
+        font-size: 60px;
+    }
+
+    .visual__txt{
+        font-size: $mainTitSubSiz;
+    }
+
+    .visual__view{
+        font-size: $mainTitSubSiz;
+
+        & a{
+            padding: 10px 20px;
+        }
+    }
+
+    .mainStep{
+        padding: $mainPadding 0;
+
+        & .in{
+            padding-left: 10px;
+        }
+
+        &__header{
+            position: relative;
+            left: auto;
+            margin-bottom: 32px;
+            text-align: center;
+
+            
+            & .titBullet{
+                margin: 0 auto 10px;
+            }
+        }
+
+        &__list{
+            top: -1%;
+
+            & .item{
+                margin: 1%;
+                width: 48%;
+            }
+        }
+    }
+
+    .mainGallery{   
+
+        padding: $mainPadding 0;
+
+        &__list{
+            margin: -1%;
+
+            & .item{
+                width: 31.3334%;
+                min-width: 300px;
+                margin: 1%;
+            }
+
+            & .thumb {
+                & img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    
+    }
+
+    .mainBlog{
+         &__list{
+            margin: -1%;
+
+            .thumb{
+                height: auto;
+            }
+
+             .item{
+                margin: 1%;
+                width: 48%;
+             }
+
+             .tit{
+
+             }
+         }
+    }
+
+    .mainReview{
+        &__list{
+            margin: -1%;
+
+            & .item{
+                margin: 1%;
+                width:31.3334%;
+                min-width: 300px;
+                height: auto;
+            }
+        } 
+    }
+   
+
+    
+
+}
+
+@media (max-width: 750px){
+    .footer{
+       &__sitemap {
+            min-height: auto;
+            
+            & > ul{
+                font-size:0px;
+                margin: -10px -1%;
+            }
+
+            & > ul > li{
+                width: 48%;
+                margin: 10px 1%;
+            }
+        } 
+    }
+}
+
+@media (max-width: 320px){
+    
+}
+
+
+
