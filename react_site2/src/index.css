@@ -9,9 +9,6 @@
 /* common */
 @import "./assets/css/common.css";
 
-/* response */
-@import "./assets/css/response.css";
-
 @import "./assets/css/header.css";
 @import "./assets/css/footer.css";
 @import "./assets/css/visual.css";
@@ -20,3 +17,6 @@
 @import "./assets/css/blog.css";
 @import "./assets/css/banner.css";
 @import "./assets/css/review.css";
+
+/* response */
+@import "./assets/css/response.css";
