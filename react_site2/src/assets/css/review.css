@@ -1,0 +1,112 @@
+.mainReview {
+  padding: 120px 0;
+  background: #F6F8FD;
+}
+.mainReview__list {
+  margin: 0 -10px;
+  font-size: 0px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.mainReview__list .item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  padding: 30px;
+  width: 373px;
+  height: 430px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.mainReview__list .txt {
+  display: -webkit-box;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+  word-break: normal;
+  white-space: normal;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+}
+.mainReview__list .desc {
+  position: relative;
+  margin: 21px 0;
+  padding: 25px 0 25px 67px;
+  border: 1px solid #D9D9D9;
+  border-width: 1px 0px;
+}
+.mainReview__list .desc::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 54px;
+  height: 54px;
+  background-image: url(../img/ico__smile.svg) no-repeat 50% 50%;
+  border-radius: 50%;
+}
+.mainReview__list .item:nth-child(1) .desc::before {
+  color: #C66464;
+  background-color: rgba(255, 241, 241, 0.5);
+}
+.mainReview__list .item:nth-child(2) .desc::before {
+  color: #6AAF35;
+  background-color: rgba(188, 255, 135, 0.5);
+}
+.mainReview__list .item:nth-child(3) .desc::before {
+  color: #4857EC;
+  background-color: rgba(72, 87, 236, 0.1);
+}
+.mainReview__list .tit {
+  font-size: 26px;
+  line-height: 128%;
+  color: #000;
+}
+.mainReview__list .th {
+  display: inline-block;
+  margin-left: 6px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 128%;
+}
+.mainReview__list .grade {
+  display: block;
+  width: 92px;
+  height: 14px;
+  background: url(../img/ico__gradeBg.svg) no-repeat 0 0;
+}
+.mainReview__list .gradeStar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -999999px;
+  background: url(../img/ico__grade.svg) no-repeat 0 0;
+}
+.mainReview__list .gradeStar.star1 {
+  width: 20%;
+}
+.mainReview__list .gradeStar.star2 {
+  width: 40%;
+}
+.mainReview__list .gradeStar.star3 {
+  width: 60%;
+}
+.mainReview__list .gradeStar.star4 {
+  width: 80%;
+}
+.mainReview__list .gradeStar.star5 {
+  width: 100%;
+}
+.mainReview__list .view {
+  display: block;
+  margin: 20px auto 0;
+  width: 108px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  background: #4857EC;
+  border-radius: 40px;
+}

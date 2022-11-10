@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64907df3.css",
+    "main.js": "/static/js/main.978d193e.js",
+    "static/media/ico__gradeBg.svg": "/static/media/ico__gradeBg.74ed02de3cead2f9b309.svg",
+    "static/media/ico__grade.svg": "/static/media/ico__grade.0f8fd747b86f09074fc1.svg",
+    "static/media/ico__smile.svg": "/static/media/ico__smile.4f6baeeb6ce5f3d03d02.svg",
+    "index.html": "/index.html",
+    "static/media/ico__more.svg": "/static/media/ico__more.81e42f86952663b06763.svg",
+    "main.64907df3.css.map": "/static/css/main.64907df3.css.map",
+    "main.978d193e.js.map": "/static/js/main.978d193e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64907df3.css",
+    "static/js/main.978d193e.js"
+  ]
+}

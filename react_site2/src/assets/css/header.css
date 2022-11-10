@@ -1,0 +1,23 @@
+/*header*/
+.header {
+  padding: 21px 0;
+  background-color: #F6F8FD;
+}
+.header__logo {
+  margin-bottom: 21px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1em;
+  color: #000;
+}
+
+.gnb__list {
+  text-align: center;
+}
+.gnb__list > li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 108px;
+  font-size: 16px;
+  color: #000;
+}
