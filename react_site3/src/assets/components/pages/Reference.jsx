@@ -1,7 +1,7 @@
 import React from "react";
 
-const About = () => {
+const Reference = () => {
   return <div>REFERENCE</div>;
 };
 
-export default About;
+export default Reference;

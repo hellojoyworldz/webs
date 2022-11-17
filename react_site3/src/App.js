@@ -10,12 +10,12 @@ import Unsplash from "./assets/components/pages/Unsplash";
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" elements={<Main />} />
-      <Route path="/about" elements={<About />} />
-      <Route path="/reference" elements={<Reference />}></Route>
-      <Route path="/youtube" elements={<Youtube />}></Route>
-      <Route path="/movie" elements={<Movie />}></Route>
-      <Route path="/unsplash" elements={<Unsplash />}></Route>
+      <Route path="/" element={<Main />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/reference" element={<Reference />}></Route>
+      <Route path="/youtube" element={<Youtube />}></Route>
+      <Route path="/movie" element={<Movie />}></Route>
+      <Route path="/unsplash" element={<Unsplash />}></Route>
     </Routes>
   </BrowserRouter>
 );

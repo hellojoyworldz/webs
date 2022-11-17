@@ -1,7 +1,7 @@
 import React from "react";
 
-const About = () => {
+const Youtube = () => {
   return <div>YOUTUBE</div>;
 };
 
-export default About;
+export default Youtube;

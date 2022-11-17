@@ -1,7 +1,7 @@
 import React from "react";
 
-const About = () => {
+const Unsplash = () => {
   return <div>UNSPLASH</div>;
 };
 
-export default About;
+export default Unsplash;
