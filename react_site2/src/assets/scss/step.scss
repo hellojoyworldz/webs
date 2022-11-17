@@ -3,82 +3,86 @@
 @import "variables.scss";
 
 /* mainStep */
-.mainStep{
+.mainStep {
     padding: $mainPadding 0;
     background-color: $mainBg;
 
-    & .in{
+    & .in {
         position: relative;
         padding-left: 413px;
         box-sizing: border-box;
     }
 
-    &__header{
+    &__header {
         position: absolute;
         left: 20px;
 
-        & .tit{
+        & .tit {
             margin-bottom: 26px;
             font-size: 50px;
             line-height: 120%;
-            color:$bla000;
+            color: $bla000;
 
-            &Bullet{
-                display:block;
+            &Bullet {
+                display: block;
                 margin-bottom: 10px;
                 padding: 3px 0;
                 width: 150px;
                 text-align: center;
                 font-size: 14px;
                 line-height: 140%;
-                color:$whiFff;
-                background: #FF3344;
+                color: $whiFff;
+                background: #ff3344;
                 border-radius: 30px;
             }
         }
 
-        & .txt{
+        & .txt {
             font-size: 18px;
             line-height: 150%;
             color: $bla000;
-        }    
+        }
     }
 
-    &__list{
+    &__list {
         position: relative;
         top: -26px;
         font-size: 0px;
 
-        & .item{
+        & .item {
             display: inline-block;
-            vertical-align:top;
+            vertical-align: top;
             margin: 26px 10px;
             width: 358px;
         }
 
-        & .tit{
-
-            &:before{
-                content:'';
+        & .tit {
+            &:before {
+                content: "";
                 display: block;
                 width: 60px;
                 height: 60px;
                 border-radius: 50%;
                 margin-bottom: 10px;
-                background:#ddd;
+                background: #ddd;
             }
 
             display: block;
             margin-bottom: 20px;
             font-size: 24px;
             line-height: 1em;
-            color:$bla000;
+            color: $bla000;
         }
 
-        & .txt{
+        & .txt {
+            display: -webkit-box;
             font-size: 18px;
             line-height: 150%;
-            color:$bla000;
+            color: $bla000;
+            word-break: normal;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
         }
     }
 }

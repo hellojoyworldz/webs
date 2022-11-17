@@ -27,7 +27,7 @@
   font-size: 14px;
   line-height: 140%;
   color: #ffffff;
-  background: #FF3344;
+  background: #ff3344;
   border-radius: 30px;
 }
 .mainStep__header .txt {
@@ -63,7 +63,12 @@
   background: #ddd;
 }
 .mainStep__list .txt {
+  display: -webkit-box;
   font-size: 18px;
   line-height: 150%;
   color: #000;
+  word-break: normal;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }

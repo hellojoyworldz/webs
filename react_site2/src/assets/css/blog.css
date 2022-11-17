@@ -27,9 +27,13 @@
   position: relative;
   display: block;
   margin-bottom: 12px;
+  padding-right: 24px;
   font-size: 28px;
   line-height: 1em;
   color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .mainBlog__list .tit::after {
   content: "";
@@ -38,7 +42,7 @@
   right: 0;
   width: 25px;
   height: 25px;
-  background: #F9C94E url(../img/ico__more.svg) no-repeat 50% 50%;
+  background: #f9c94e url(../img/ico__more.svg) no-repeat 50% 50%;
   border-radius: 5px;
 }
 .mainBlog__list .txt {

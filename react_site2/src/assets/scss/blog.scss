@@ -2,60 +2,63 @@
 
 @import "variables.scss";
 
-
-.mainBlog{
+.mainBlog {
     padding: $mainPadding 0;
     background: $mainBg;
 
-    &__list{
+    &__list {
         margin: -25px -5px;
         font-size: 0px;
 
-        & .item{
+        & .item {
             display: inline-block;
             vertical-align: top;
             margin: 25px 5px;
             width: 275px;
         }
 
-        & .thumb{
+        & .thumb {
             display: block;
             margin-bottom: 19px;
             height: 203px;
             overflow: hidden;
             transition: 0.3s;
 
-            & img{
-                width:100%;
+            & img {
+                width: 100%;
                 height: auto;
             }
         }
 
-        & .tit{
+        & .tit {
             position: relative;
             display: block;
             margin-bottom: 12px;
+            padding-right: 24px;
             font-size: 28px;
             line-height: 1em;
-            color:$bla000;
+            color: $bla000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
-            &::after{
-                content:'';
+            &::after {
+                content: "";
                 position: absolute;
                 top: 0;
                 right: 0;
                 width: 25px;
                 height: 25px;
-                background: #F9C94E url(../img/ico__more.svg) no-repeat 50% 50%;
+                background: #f9c94e url(../img/ico__more.svg) no-repeat 50% 50%;
                 border-radius: 5px;
             }
         }
 
-        & .txt{
+        & .txt {
             display: -webkit-box;
             font-size: 18px;
             line-height: 140%;
-            color:$bla000;
+            color: $bla000;
             opacity: 0.5;
             word-break: normal;
             overflow: hidden;

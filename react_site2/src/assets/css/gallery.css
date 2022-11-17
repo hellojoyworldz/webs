@@ -3,16 +3,14 @@
 }
 .mainGallery__list {
   font-size: 0px;
-  margin: 0 -10px;
-  white-space: nowrap;
-  overflow-x: auto;
+  margin: -10px;
 }
 .mainGallery__list .item {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin: 0 10px;
-  width: 374px;
+  margin: 10px;
+  width: calc(50% - 20px);
   overflow: hidden;
 }
 .mainGallery__list .thumb {
@@ -22,9 +20,6 @@
   transition: 0.3s;
 }
 .mainGallery__list .desc {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   padding: 21px 0;
   width: 100%;
   text-align: center;
@@ -32,16 +27,20 @@
           backdrop-filter: blur(5px);
 }
 .mainGallery__list .item:nth-child(1) .desc {
-  color: #6C0506;
+  color: #6c0506;
   background: rgba(235, 77, 74, 0.5);
 }
 .mainGallery__list .item:nth-child(2) .desc {
-  color: #745A00;
+  color: #745a00;
   background: rgba(255, 208, 89, 0.5);
 }
 .mainGallery__list .item:nth-child(3) .desc {
-  color: #D0C8FF;
+  color: #7c73b1;
   background: rgba(188, 181, 215, 0.5);
+}
+.mainGallery__list .item:nth-child(4) .desc {
+  color: #3c4d79;
+  background: rgba(130, 179, 250, 0.5);
 }
 .mainGallery__list .tit {
   display: block;

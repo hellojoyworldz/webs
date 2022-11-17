@@ -2,32 +2,32 @@
 
 @import "variables.scss";
 
-.mainBanner{
+.mainBanner {
     padding: $mainPadding 0;
-    background: url(https://source.unsplash.com/random) no-repeat 50% 50%;
+    background: url(../img/mainBanner__img01.jpg) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
 
-    & .tit{
+    & .tit {
         margin-bottom: 40px;
         font-size: $mainTitSiz;
         line-height: $mainTitLin;
-        color: $mainTitColor;
+        color: $whiFff;
     }
 
-    & .txt{
+    & .txt {
         margin-bottom: 69px;
         font-size: $mainTitSubSiz;
         line-height: $mainTitSubLin;
-        color: $mainTitSubColor;
+        color: $whiFff;
     }
 
-    & .view{
+    & .view {
         display: inline-block;
         padding: 15px 78px;
         font-size: 18px;
         line-height: 1em;
         color: $whiFff;
-        background: #FF3344;
+        background: #ff3344;
     }
 }

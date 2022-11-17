@@ -1,6 +1,6 @@
 .mainBanner {
   padding: 120px 0;
-  background: url(https://source.unsplash.com/random) no-repeat 50% 50%;
+  background: url(../img/mainBanner__img01.jpg) no-repeat 50% 50%;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -8,13 +8,13 @@
   margin-bottom: 40px;
   font-size: 50px;
   line-height: 100%;
-  color: #000;
+  color: #ffffff;
 }
 .mainBanner .txt {
   margin-bottom: 69px;
   font-size: 22px;
   line-height: 150%;
-  color: #777777;
+  color: #ffffff;
 }
 .mainBanner .view {
   display: inline-block;
@@ -22,5 +22,5 @@
   font-size: 18px;
   line-height: 1em;
   color: #ffffff;
-  background: #FF3344;
+  background: #ff3344;
 }
