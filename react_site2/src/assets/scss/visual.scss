@@ -3,33 +3,35 @@
 @import "variables.scss";
 
 /* main visual */
-.visual{
-
-    &__header{
-        position:absolute;
+.visual {
+    &__header {
+        position: absolute;
+        z-index: 9;
     }
 
-    &__tit{
+    &__tit {
         margin: 90px 0 23px 0;
         font-size: 110px;
-        color: $bla000;
+        color: $whiFff;
+        text-shadow: 16px 16px 8px rgba(0, 0, 0, 0.8);
     }
 
-    &__txt{
+    &__txt {
         font-size: 24px;
         line-height: 1.5em;
-        color: $bla0c0;
+        color: $whiFff;
+        text-shadow: 16px 16px 8px rgba(0, 0, 0, 0.8);
     }
 
-    &__view{
+    &__view {
         margin-top: 29px;
         display: inline-block;
         font-size: 18px;
         line-height: 1em;
         color: $whiFff;
-        background:#4857EC;
+        background: #4857ec;
 
-        & a{
+        & a {
             display: block;
             padding: 15px 67px;
         }

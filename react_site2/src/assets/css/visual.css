@@ -1,16 +1,19 @@
 /* main visual */
 .visual__header {
   position: absolute;
+  z-index: 9;
 }
 .visual__tit {
   margin: 90px 0 23px 0;
   font-size: 110px;
-  color: #000;
+  color: #ffffff;
+  text-shadow: 16px 16px 8px rgba(0, 0, 0, 0.8);
 }
 .visual__txt {
   font-size: 24px;
   line-height: 1.5em;
-  color: #0C0C0C;
+  color: #ffffff;
+  text-shadow: 16px 16px 8px rgba(0, 0, 0, 0.8);
 }
 .visual__view {
   margin-top: 29px;
@@ -18,7 +21,7 @@
   font-size: 18px;
   line-height: 1em;
   color: #ffffff;
-  background: #4857EC;
+  background: #4857ec;
 }
 .visual__view a {
   display: block;
