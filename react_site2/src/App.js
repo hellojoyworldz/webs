@@ -16,7 +16,7 @@ const App = () => {
       <Header />
       <Main>
         <Visual />
-        <SwiperSlide />
+
         <Step />
         <Gallery />
         <Blog />
