@@ -2,6 +2,21 @@
 @import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
+:root {
+    --black: #624a29;
+    --white: #fff;
+    --primary-color: #ff9c6a;
+    --primary-color-dark: #ee7331;
+    --primary-color-tint: #fdb490;
+    --secondary-color: #fff6a4;
+    --secondary-color-tint: #fffcdf;
+    --secondary-color-dark: #f5d79d;
+    --accent-color: #ff6a6a;
+    --background: var(--primary-color-tint);
+    --circle-sizing: 18rem;
+    --circle-rotate: 0deg;
+}
+
 /* 여백 초기화 */
 * {
     margin: 0;
@@ -61,7 +76,7 @@ body {
 #header h1 a {
     font-size: 80px;
     font-weight: 700;
-    color: #0243f1;
+    color: var(--primary-color-dark);
     font-family: 'NexonLv1Gothic';
 }
 .header_nav {
@@ -71,20 +86,20 @@ body {
     display: inline;
 }
 .header_nav ul li.active a {
-    background-color: #0243f1;
+    background-color: var(--primary-color-dark);
     color: #fff;
 }
 .header_nav ul li a {
-    border: 1px dashed #0243f1;
+    border: 1px dashed var(--primary-color);
     padding: 8px 25px;
     display: inline-block;
     margin-bottom: 7px;
-    color: #0243f1;
+    color: var(--primary-color);
     font-weight: 500;
     font-family: 'GmarketSans';
 }
 .header_nav ul li a:hover {
-    background-color: #0243f1;
+    background-color: var(--primary-color);
     color: #fff;
 }
 .header_nav .study {
@@ -93,7 +108,7 @@ body {
 .header_nav .study li a {
     border-radius: 50px;
     padding: 6px 30px;
-    background-color: #0243f1;
+    background-color: var(--primary-color);
     color: #fff;
 }
 .header_nav .effect {
