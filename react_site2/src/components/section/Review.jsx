@@ -5,7 +5,7 @@ const Review = () => {
     <section className="mainReview">
       <div className="in">
         <div className="cm-main__header">
-          <h2 className="tit">Review Hotels Combind in 서울</h2>
+          <h2 className="tit">Review in 서울</h2>
           <p className="txt">
             2022년 5월 새롭게 오픈한 롯데 호텔 월드는 <br />
             세계 최대 규모의 실내 놀이공원인 롯데월드 어드벤쳐와 롯데월드몰과
