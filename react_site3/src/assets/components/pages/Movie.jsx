@@ -32,7 +32,7 @@ const Movie = () => {
     };
 
     fetch(
-      "https://api.themoviedb.org/3/movie/popular?api_key=229aa6d4eeca4ffac7974c6a4310529d&page=1",
+      "https://api.themoviedb.org/3/movie/popular?api_key=229aa6d4eeca4ffac7974c6a4310529d&&page=1",
       requestOptions
     )
       .then((response) => response.json())
@@ -48,6 +48,7 @@ const Movie = () => {
         <MovieSlider movies={movies} />
         <MovieSearch onSearch={search} />
         <MovieCont movies={movies} />
+
         <Contact />
       </Contents>
       <Footer />

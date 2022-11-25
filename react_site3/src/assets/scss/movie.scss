@@ -1,41 +1,81 @@
-.movie__inner {
-    ul {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+.movie {
+    &__inner {
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 2%;
 
-        li {
-            width: 23%;
-            position: relative;
+            li {
+                width: 23%;
+                margin: 16px 0;
+                position: relative;
 
-            em {
-                display: block;
-                height: 80px;
-                margin-bottom: 30px;
-                font-family: var(--font-kor2);
-            }
-            .title {
-                padding: 5px 0;
-                display: inline-block;
-            }
-            .star {
-                background: #fff;
-                color: #000;
-                position: absolute;
-                left: 10px;
-                top: 10px;
-                width: 30px;
-                height: 30px;
-                border-radius: 100px;
-                text-align: center;
-                line-height: 30px;
-                font-weight: 800;
+                em {
+                    display: block;
+                    height: 80px;
+                    margin-bottom: 30px;
+                    font-family: var(--font-kor2);
+                }
             }
         }
+        a {
+            color: var(--white);
+        }
+    }
+    &__header {
+        margin: 16px 0;
     }
 
-    a {
-        color: var(--white);
+    &__title {
+        display: block;
+    }
+
+    &__sbj {
+        display: block;
+        margin-top: 8px;
+        font-family: var(--font-sub2);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__desc {
+        display: block;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        margin: 8px 0;
+        height: 67px;
+        font-family: var(--font-sub2);
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__date {
+        font-family: var(--font-sub2);
+    }
+
+    &__grade {
+        font-family: var(--font-sub2);
+    }
+
+    &__star {
+        background: #fff;
+        color: #000;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 800;
+        font-family: var(--font-sub2);
     }
 }
 
@@ -59,7 +99,7 @@
         color: #fff;
         width: 100%;
         padding: 14px 30px;
-        font-family: var(—font-kor2);
+        font-family: var(--font-sub2);
     }
     button {
         position: absolute;
@@ -69,8 +109,12 @@
         height: 40px;
         border-radius: 50%;
         border: 0;
-        font-family: var(—font-kor2);
+        font-family: var(—-font-sub2);
         cursor: pointer;
         z-index: 1000;
     }
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
 }

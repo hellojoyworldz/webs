@@ -1,0 +1,48 @@
+@charset "UTF-8";
+// variable
+$in: 1200px;
+$lyMargin: 12px;
+$lyPadding: 36px;
+$lyRadius: 36px;
+
+$fontFir: "Noto Sans KR";
+$fontSec: "Poppins";
+$fontKo: $fontFir;
+$fontEn: $fontSec;
+
+$fontSizLv1: 36px;
+$fontSizLv2: 24px;
+$fontSizLv3: 18px;
+$fontSizLv4: 16px;
+$fontSizLv5: 14px;
+$fontSizLv6: 12px;
+
+$lineHei150: 150%;
+$lineHei140: 140%;
+$lineHei130: 130%;
+$lineHei120: 120%;
+$lineHei110: 110%;
+$lineHei100: 100%;
+$lineHeiLv0: $lineHei100;
+$lineHeiLv1: $lineHei150;
+$lineHeiLv2: $lineHei140;
+$lineHeiLv3: $lineHei120;
+
+$black111: #111;
+$black222: #222;
+$black333: #333;
+$black444: #444;
+$black555: #555;
+$black666: #666;
+$whiteFff: #fff;
+$whiteF1f: #f1f1f1;
+$whiteF5f: #f5f5f5;
+$whiteF9f: #f9f9f9;
+$greyAaa: #aaa;
+$greyDdd: #ddd;
+$greyEae: #eaeaea;
+$fontColLv1: $black222;
+$fontColLv2: $black444;
+$fontColLv3: $black666;
+$bgCol: $whiteF9f;
+$pointCol1: #ffc300;

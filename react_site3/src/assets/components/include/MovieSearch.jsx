@@ -5,8 +5,13 @@ const MovieSearch = ({ onSearch }) => {
 
   const handleSearch = () => {
     const value = inputRef.current.value;
-    onSearch(value);
-    // console.log(onSearch(value));
+    if (value == "") {
+      alert("검색어를 입력해주세요");
+    } else {
+      onSearch(value);
+    }
+
+    //console.log(onSearch(value));
   };
 
   const onKeyPress = (event) => {
@@ -26,11 +31,11 @@ const MovieSearch = ({ onSearch }) => {
         <input
           ref={inputRef}
           type="search"
-          placeholder="검색하세요!"
+          placeholder="keywords"
           onKeyPress={onKeyPress}
         />
         <button type="submit" onClick={onClick}>
-          검색
+          🔍
         </button>
       </div>
     </div>

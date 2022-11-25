@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="footer__inner">
         <div>
           <h3>email</h3>
-          <a href="mailto:webstoryboy@naver.com">webstoryboy@naver</a>
+          <a href="mailto:hellojoyworldz@google.com">
+            hellojoyworldz@google.com
+          </a>
         </div>
         <div>
           <h3>kakao</h3>
