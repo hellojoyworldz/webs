@@ -29,8 +29,8 @@ const Youtube = (props) => {
       <div className="container">
         <div className="movie__inner">
           <ul>
-            {props.youtube.map((youtube) => (
-              <YoutubeItem key={youtube.id} youtube={youtube} />
+            {props.youtube.map((youtubes, index) => (
+              <YoutubeItem key={index} youtube={youtubes} />
             ))}
           </ul>
         </div>

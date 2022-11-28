@@ -1,56 +1,61 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import Header from "../layout/Header";
-import Footer from "../layout/Footer";
-import UnsplashCont from "../include/UnsplashCont";
-import UnsplashSearch from "../include/UnsplashSearch";
-import UnsplashSlider from "../include/UnsplashSlider";
-
 import Contents from "../layout/Contents";
+import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import Contact from "../layout/Contact";
+import UnsplashCont from "../include/UnsplashCont";
+import UnsplashSearch from "../include/UnsplashSearch";
+import UnsplashRandomImg from "../include/UnsplashRandomImg";
+import { useState } from "react";
+import { useEffect } from "react";
 
-const Unsplash = () => {
-  //데이터 가져와서 MovieCont에 주기
-  const [unsplash, setUnsplash] = useState([]); // 배열구조분해할당. 움지이는 데이터는 이렇게 저장하는구나! 라고 생각하기.
+function Unsplash() {
+  const [images, setImages] = useState([]);
+  const [randomImgs, setRandomImgs] = useState([]);
 
-  const search = async (query) => {
-    await fetch(
-      //비동기방식으로 해주기 위해 async,  await 넣어준다.
-      `https://api.unsplash.com/photos/search/&client_id=4-0M4l1erSHX0zJZInORLLu5YQEAsEwWgQPwWdOZCPs&count=24&query=${query}`
+  const search = (query) => {
+    fetch(
+      `https://api.unsplash.com/search/photos?query=${query}&client_id=4-0M4l1erSHX0zJZInORLLu5YQEAsEwWgQPwWdOZCPs&per_page=30`
     )
       .then((response) => response.json())
-      .then((result) => setUnsplash(result.results)) //배열 안에 객체 가져오기
-      .catch((error) => console.log("error", error));
+      .then((result) => setImages(result.results));
   };
 
   useEffect(() => {
-    //데이터가 바뀌면 자동으로 바뀌어 주기 위해서. 필요한 부분이 바뀐것을 인식하기 위해서.
-    let requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
     fetch(
-      "https://api.unsplash.com/photos/random&clident_id=4-0M4l1erSHX0zJZInORLLu5YQEAsEwWgQPwWdOZCPs",
-      requestOptions
+      "https://api.unsplash.com/search/photos?query=seoul&client_id=4-0M4l1erSHX0zJZInORLLu5YQEAsEwWgQPwWdOZCPs&per_page=30"
     )
       .then((response) => response.json())
-      .then((result) => setUnsplash(result.results)) //배열 안에 객체 가져오기
+      .then((result) => {
+        setImages(result.results);
+      })
+      // .then((result) => console.log(result));
+      .catch((error) => console.log("error", error));
+
+    fetch(
+      "https://api.unsplash.com/photos/random?client_id=4-0M4l1erSHX0zJZInORLLu5YQEAsEwWgQPwWdOZCPs&count=10"
+    )
+      .then((response) => response.json())
+      .then((result) => {
+        setRandomImgs(result);
+      })
       .catch((error) => console.log("error", error));
   }, []);
 
   return (
-    <>
+    <div>
       <Header />
       <Contents>
-        <Title title={["unsplash", "reference api"]} />
-        <UnsplashCont unsplash={unsplash} />
+        <Title title={["Unsplash", "Api"]} />
+        <UnsplashRandomImg randomImgs={randomImgs} />
+        <UnsplashSearch onSearch={search} />
+        <UnsplashCont images={images} />
         <Contact />
       </Contents>
       <Footer />
-    </>
+    </div>
   );
-};
+}
 
 export default Unsplash;

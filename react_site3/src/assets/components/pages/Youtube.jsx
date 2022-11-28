@@ -12,15 +12,15 @@ import Contact from "../layout/Contact";
 
 const Youtube = () => {
   //데이터 가져와서 MovieCont에 주기
-  const [youtube, setYoutube] = useState([]); // 배열구조분해할당. 움지이는 데이터는 이렇게 저장하는구나! 라고 생각하기.
+  const [youtubes, setYoutube] = useState([]); // 배열구조분해할당. 움지이는 데이터는 이렇게 저장하는구나! 라고 생각하기.
 
   const search = async (query) => {
     await fetch(
       //비동기방식으로 해주기 위해 async,  await 넣어준다.
-      `https://api.themoviedb.org/3/search/movie?api_key=229aa6d4eeca4ffac7974c6a4310529d&page=1&query=${query}`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=24&type=videl&key=AIzaSyB_X6_RQpqz0m6s9jB2sg-ccFYS2grm2X4&q=${query}`
     )
       .then((response) => response.json())
-      .then((result) => setYoutube(result.results)) //배열 안에 객체 가져오기
+      .then((result) => setYoutube(result.items)) //배열 안에 객체 가져오기
       .catch((error) => console.log("error", error));
   };
 
@@ -46,7 +46,9 @@ const Youtube = () => {
       <Contents>
         <Title title={["youtube", "reference api"]} />
 
-        <YoutubeCont youtube={youtube} />
+        <YoutubeSlider youtube={youtubes} />
+        <YoutubeSearch onSearch={search} />
+        <YoutubeCont youtube={youtubes} />
 
         <Contact />
       </Contents>
