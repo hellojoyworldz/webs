@@ -78,6 +78,7 @@ function App() {
 
       {
         /* {} 안에는 if,for문 못씀 */
+        /* 내가 한 것 !: set,get 함수 이용해서 제목 바꿔보기 */
         modal == true ? <Modal 글제목={글제목} changeTit={changeTit} getIndex={getIndex}/> : null
       }
       
