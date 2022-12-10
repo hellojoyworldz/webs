@@ -29,7 +29,7 @@ function Header(props) {
           </ul>
         </nav>
         <div className="header__member">
-          <a href="/">Github</a>
+          <a href="https://github.com/hellojoyworldz/react_site1">Github</a>
         </div>
         {/*
         <div className="header__ham">
