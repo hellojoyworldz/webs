@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="mainBanner">
+    <section id="ticket" className="mainBanner">
       <div className="in">
         <h2 className="tit">항공권 모아보면 보인다!</h2>
         <p className="txt">

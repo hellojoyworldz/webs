@@ -2,7 +2,7 @@ import React from "react";
 
 const Step = () => {
   return (
-    <section className="mainStep">
+    <section id="hotel" className="mainStep">
       <div className="in">
         <div className="mainStep__header">
           <h2 className="tit">

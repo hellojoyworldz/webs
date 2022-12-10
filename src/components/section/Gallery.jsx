@@ -2,7 +2,7 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <section className="mainGallery">
+    <section id="car" className="mainGallery">
       <div className="in">
         <div className="cm-main__header">
           <h2 className="tit">Top rental car in 서울</h2>
