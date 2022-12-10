@@ -1,20 +1,21 @@
 import React from "react";
 
-const UnsplashItem = (props) => (
-  <li>
-    <a href="/">
-      <img src={props.picture.snippet.thumbnails.high.url} alt="" />
-    </a>
-  </li>
-);
-
+const UnsplashItem = (props) => {
+  return (
+    <li>
+      <a href="/">
+        <img src={props.picture.urls.regular} alt="" />
+      </a>
+    </li>
+  );
+};
 const UnsplashCont = (props) => {
   return (
     <section className="cont__movie">
       <div className="container">
         <div className="movie__inner">
           <ul>
-            {props.picture.map((picture) => (
+            {props.pictures.map((picture) => (
               <UnsplashItem key={picture.id} picture={picture} />
             ))}
           </ul>

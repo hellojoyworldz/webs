@@ -11,8 +11,8 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <h3>ID</h3>
-          <a href="/">webstoryoby</a>
+          <h3>Name</h3>
+          <a href="https://hellojoyworldz.github.io/myPORTFOLIO/">G.SUNAH</a>
         </div>
         <div>
           <h3>social</h3>
