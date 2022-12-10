@@ -11,23 +11,23 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <h3>kakao</h3>
+          <h3>ID</h3>
           <a href="/">webstoryoby</a>
         </div>
         <div>
           <h3>social</h3>
           <ul>
             <li>
-              <a href="/">youtube</a>
+              <a href="https://hellojoyworldz.github.io/myPORTFOLIO/">
+                portfolio
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/hellojoyworldz">github</a>
             </li>
             <li>
-              <a href="/">instargram</a>
-            </li>
-            <li>
-              <a href="/">github</a>
-            </li>
-            <li>
-              <a href="/">blog</a>
+              <a href="https://hellojoyworldz.tistory.com/">blog</a>
             </li>
           </ul>
         </div>
