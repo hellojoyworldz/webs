@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { SearchBar } from ".";
+//import { SearchBar } from ".";
 import { SiYoutubegaming } from "react-icons/si";
 
 const HeaderCont = () => {
