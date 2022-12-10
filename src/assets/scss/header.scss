@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import "variables.scss";
+
+/*header*/
+.header{
+    padding: 21px 0;
+    background-color: $mainBg;
+
+    &__logo{
+        margin-bottom: 21px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 1em;
+        color: $bla000;
+
+    }
+}
+
+.gnb__list{
+    text-align: center;
+    & > li{
+        display: inline-block;
+        vertical-align:top;
+        padding: 0 108px;
+        font-size: 16px;
+        color: $bla000;
+    }
+}

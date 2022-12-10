@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import "variables.scss";
+
+/*common*/
+.in{
+    width: $in;
+    margin:0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* main common */
+.cm-main__header{
+    margin-bottom: 70px;
+    text-align: center;
+
+    & .tit{
+        margin-bottom: 20px;
+        font-size: $mainTitSiz;
+        line-height: $mainTitLin;
+        color:$mainTitColor;
+    }
+
+    & .txt{
+        font-size: $mainTitSubSiz;
+        line-height: $mainTitSubLin;
+        color: $mainTitSubColor;
+    }
+}
