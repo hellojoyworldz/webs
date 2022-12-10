@@ -8,7 +8,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 const UnsplashSliderItem = ({ picture }) => {
-  return <img src={picture.urls.regular} />;
+  return <img src={picture.urls.regular} alt="" />;
 };
 
 const UnsplashSlider = ({ pictures }) => {

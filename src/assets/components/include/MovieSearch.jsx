@@ -5,7 +5,7 @@ const MovieSearch = ({ onSearch }) => {
 
   const handleSearch = () => {
     const value = inputRef.current.value;
-    if (value == "") {
+    if (value === "") {
       alert("검색어를 입력해주세요");
     } else {
       onSearch(value);

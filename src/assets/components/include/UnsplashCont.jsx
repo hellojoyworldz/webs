@@ -1,21 +1,21 @@
 import React from "react";
 
-const YoutubeItem = (props) => (
+const UnsplashItem = (props) => (
   <li>
     <a href="/">
-      <img src={props.video.snippet.thumbnails.high.url} />
+      <img src={props.picture.snippet.thumbnails.high.url} alt="" />
     </a>
   </li>
 );
 
-const YoutubeCont = (props) => {
+const UnsplashCont = (props) => {
   return (
     <section className="cont__movie">
       <div className="container">
         <div className="movie__inner">
           <ul>
-            {props.videos.map((video) => (
-              <YoutubeItem key={video.id} video={video} />
+            {props.picture.map((picture) => (
+              <UnsplashItem key={picture.id} picture={picture} />
             ))}
           </ul>
         </div>
@@ -23,4 +23,4 @@ const YoutubeCont = (props) => {
     </section>
   );
 };
-export default YoutubeCont;
+export default UnsplashCont;
