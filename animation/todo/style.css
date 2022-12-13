@@ -1,0 +1,88 @@
+html, body, ul, input, h1{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.contents__todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:rgb(228, 191, 255) ;
+
+}
+
+
+.todo__box{
+    width: 560px;
+}
+
+.todo__tit{
+    padding: 24px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1em;
+    color:#fff;
+    background: #7603c8;
+    box-sizing: border-box;
+}
+
+.todo__item{
+    position: relative;
+    padding: 24px 24px 24px 60px;
+    min-height: 74px;
+    border-top:1px solid #ddd;
+    font-size: 24px;
+    background:#fff;
+    box-sizing: border-box;
+}
+
+.todo__checkbox{
+    width:0px;
+    height: 0px;
+    font-size: 0px;;
+}
+
+.todo__checkbox:before{
+    content:'';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    background:#fff;
+    border-radius:50%;
+    box-sizing: border-box;
+}
+
+.todo__checkbox::after{
+    content:'';
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    width: 16px;
+    height: 16px;
+    background:#7603c8;
+    border-radius:50%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.todo__label{
+    transition: 0.3s;
+}
+
+/* checked */
+.todo__checkbox:checked::after{
+    opacity:1;
+}
+
+.todo__checkbox:checked + .todo__label{
+    color:#ddd;
+   text-decoration:line-through
+}

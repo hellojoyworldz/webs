@@ -1,0 +1,60 @@
+$colors: (
+	background: #d1d8e0,
+	button: #3867d6,
+	buttonText: #fff,
+	buttonBorder: #26de81
+);
+
+.flex {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.scene {
+	background-color: map-get($colors, background);
+	height: 100vh;
+}
+
+.button {
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+
+	&__text {
+		background: map-get($colors, button);
+		color: map-get($colors, buttonText);
+		padding: 1em 3em;
+		border-radius: 3em;
+		font: 600 1rem/1 "Lato", sans-serif;
+		white-space: nowrap;
+		position: relative;
+		z-index: 1;
+		letter-spacing: 0.075em;
+		border: 3px solid transparent;
+		text-transform: uppercase;
+
+		.button:focus & {
+			// Can't think of anything that would look good
+			// box-shadow: 0 0 2px 2px map-get($colors, buttonBorder);
+			// text-decoration: underline;
+		}
+	}
+}
+
+.confetti {
+	position: relative;
+
+	&__image {
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
