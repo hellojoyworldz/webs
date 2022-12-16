@@ -41,13 +41,13 @@ const Slide = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}>
         <SwiperSlide>
-          <img src="../assets/img/visual__img01.jpg" alt="" />
+          <img src="../assets/img/visual__img01.jpg" width="1918" height="700" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../assets/img/visual__img02.jpg" alt="" />
+          <img src="../assets/img/visual__img02.jpg" width="1918" height="700" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../assets/img/visual__img03.jpg" alt="" />
+          <img src="../assets/img/visual__img03.jpg" width="1918" height="700" alt="" />
         </SwiperSlide>
       </Swiper>
     </section>

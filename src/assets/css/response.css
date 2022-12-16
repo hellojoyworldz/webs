@@ -96,8 +96,7 @@
     margin: -1%;
   }
   .mainGallery__list .item {
-    width: 31.3334%;
-    min-width: 300px;
+    width: 48%;
     margin: 1%;
   }
   .mainGallery__list .tit {

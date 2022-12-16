@@ -13,13 +13,13 @@ const Header = (props) => {
         <nav className="gnb">
           <ul className="gnb__list">
             <li>
-              <a href="hotel">호텔</a>
+              <a href="#hotel">호텔</a>
             </li>
             <li>
-              <a href="car">렌트카</a>
+              <a href="#car">렌트카</a>
             </li>
             <li>
-              <a href="ticket">항공권</a>
+              <a href="#ticket">항공권</a>
             </li>
           </ul>
         </nav>
