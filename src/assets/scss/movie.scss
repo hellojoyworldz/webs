@@ -118,3 +118,8 @@
 .swiper-pagination-bullet {
     background: #fff;
 }
+
+.swiper-slide img{
+    height: 100%;
+    object-fit:cover;
+}
