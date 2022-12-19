@@ -7,7 +7,7 @@ function Card({ attr }) {
       <p>
         Family vacation or romantic getaway, thrill-seeker or art buff…
         <br />
-        there’s an adventure for you to discover in Idaho.
+        there’s an adventure for you to discover in Auckland.
       </p>
       <div className={`card__inner ${attr[1]}`}>
         <article className="card">
@@ -17,9 +17,9 @@ function Card({ attr }) {
           <div className="card__body">
             <h3 className="tit">HOT SPRING</h3>
             <p className="desc">
-              you’ll find Idaho’s beloved hot springs waiting to wash away your
-              stress. For an alternative soaking experience, visit any of the
-              more
+              you’ll find Auckland’s beloved hot springs waiting to wash away
+              your stress. For an alternative soaking experience, visit any of
+              the more
             </p>
             <a className="btn" href="/">
               view more
@@ -46,9 +46,9 @@ function Card({ attr }) {
           <div className="card__body">
             <h3 className="tit">STATE PARK</h3>
             <p className="desc">
-              From pristine lakes to sky-piercing mountains, Idaho’s state parks
-              offer an impressive variety of terrain and beauty. Whether you’re
-              hiking
+              From pristine lakes to sky-piercing mountains, Auckland’s state
+              parks offer an impressive variety of terrain and beauty. Whether
+              you’re hiking
             </p>
             <a className="btn" href="/">
               view more
@@ -75,8 +75,8 @@ function Card({ attr }) {
           <div className="card__body">
             <h3 className="tit">ROAD TRIP</h3>
             <p className="desc">
-              In Idaho, taking the road less traveled is one of the best ways to
-              explore the state. And with 31 unique scenic byways, there are
+              In Auckland, taking the road less traveled is one of the best ways
+              to explore the state. And with 31 unique scenic byways, there are
             </p>
             <a className="btn" href="/">
               view more

@@ -11,17 +11,18 @@ function ImgText({ attr }) {
           <span>Food & Drink</span>
           <h3>Did you know..?</h3>
           <p>
-            Visit Idaho and discover exquisite dining experiences, award-winning
-            wineries and incredible craft beers.
+            Visit Auckland and discover exquisite dining experiences,
+            award-winning wineries and incredible craft beers.
           </p>
           <ul>
             <li>
-              Idaho leads the nation in potato production producing nearly ⅓of
-              all U.S. potatoes.
+              Auckland leads the nation in potato production producing nearly
+              ⅓of all U.S. potatoes.
             </li>
             <li>
-              Huckleberries, Idaho’s state fruit, can be found in a wide variety
-              of delicacies across the state from pies to ice cream to vodka.
+              Huckleberries, Auckland’s state fruit, can be found in a wide
+              variety of delicacies across the state from pies to ice cream to
+              vodka.
             </li>
           </ul>
         </div>
@@ -30,7 +31,7 @@ function ImgText({ attr }) {
         </div>
         <div className="imgText__img img2">
           <a href="/" className="blue">
-            Idaho Breweries
+            Auckland Breweries
           </a>
         </div>
       </div>

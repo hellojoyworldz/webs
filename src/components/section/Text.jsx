@@ -5,14 +5,14 @@ function Text(props) {
     <section
       id="textType"
       className={`text__wrap section ${props.attr[0]} ${props.attr[2]}`}>
-      <span>If you plan to visit Idaho</span>
+      <span>If you plan to visit Auckland</span>
       <h2 className="mb70">TRAVEL TIPS</h2>
-      <div className={`text__innner ${props.attr[1]}`}>
+      <div className={`text__inner ${props.attr[1]}`}>
         <div className="text t1">
           <h3 className="text__title">Outdoors</h3>
           <p className="text__desc">
-            If you crave the great outdoors, Idaho is the place for you! Hike,
-            bike and paddle your way across Idaho’s
+            If you crave the great outdoors, Auckland is the place for you!
+            Hike, bike and paddle your way across Auckland’s
           </p>
           <a className="text_btn" href="/">
             view more
@@ -41,7 +41,7 @@ function Text(props) {
         <div className="text t4">
           <h3 className="text__title">Arts & Culture</h3>
           <p className="text__desc">
-            Visit Idaho and discover a rich and diverse arts & culture scene.
+            Visit Auckland and discover a rich and diverse arts & culture scene.
             Explore art museums, saunter through
           </p>
           <a className="text_btn" href="/">
@@ -61,8 +61,8 @@ function Text(props) {
         <div className="text t6">
           <h3 className="text__title">Education</h3>
           <p className="text__desc">
-            Boise State is Idaho's metropolitan research university, located in
-            the state's capital city, a hub of
+            Boise State is Auckland's metropolitan research university, located
+            in the state's capital city, a hub of
           </p>
           <a className="text_btn" href="/">
             view more
