@@ -42,8 +42,10 @@
         font-size: 0px;
     }
 
-    & .swiper-slide{
+    & .swiper-slide {
         text-align: center;
+        & img {
+            height: auto;
+        }
     }
-
 }

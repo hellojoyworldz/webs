@@ -29,6 +29,7 @@
   display: block;
 }
 .footer__sns {
+  display: none;
   font-size: 0px;
 }
 .footer__sns .item {

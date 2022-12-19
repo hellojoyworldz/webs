@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, A11y } from "swiper";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -33,21 +33,37 @@ const Slide = () => {
       </div>
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, A11y]}
+        modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}>
+        autoplay={{ delay: 3500 }}
+        loop
+        Keyboard>
         <SwiperSlide>
-          <img src="../assets/img/visual__img01.jpg" width="1918" height="700" alt="" />
+          <img
+            src="../assets/img/visual__img02.jpg"
+            width="1918"
+            height="700"
+            alt=""
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../assets/img/visual__img02.jpg" width="1918" height="700" alt="" />
+          <img
+            src="../assets/img/visual__img03.jpg"
+            width="1918"
+            height="700"
+            alt=""
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../assets/img/visual__img03.jpg" width="1918" height="700" alt="" />
+          <img
+            src="../assets/img/visual__img01.jpg"
+            width="1918"
+            height="700"
+            alt=""
+          />
         </SwiperSlide>
       </Swiper>
     </section>

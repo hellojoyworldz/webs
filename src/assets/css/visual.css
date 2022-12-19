@@ -34,3 +34,6 @@
 .visual .swiper-slide {
   text-align: center;
 }
+.visual .swiper-slide img {
+  height: auto;
+}
