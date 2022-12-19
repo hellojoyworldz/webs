@@ -29,7 +29,7 @@ const SearchBar = () => {
         type="text"
         id="searchInput"
         className="input__searc"
-        placeholder="개발자 유튜버를 검색하세요!"
+        placeholder="유튜브를 검색하세요!"
         title="검색"
         value={searchTerm || ""}
         onChange={(e) => setSearchTerm(e.target.value)}

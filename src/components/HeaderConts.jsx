@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar";
 
 //import { SearchBar } from ".";
 import { SiYoutubegaming } from "react-icons/si";
@@ -12,7 +13,7 @@ const HeaderCont = () => {
           <SiYoutubegaming className="icon" /> 개발자 유튜브
         </Link>
       </h1>
-      {/*<SearchBar />*/}
+      <SearchBar />
     </header>
   );
 };
