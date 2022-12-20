@@ -24,7 +24,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h3>Idaho falls</h3>
+            <h3>Auckland falls</h3>
             <ul>
               <li>
                 <a href="/">Shoshone Falls</a>
