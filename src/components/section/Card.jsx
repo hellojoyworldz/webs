@@ -70,7 +70,7 @@ function Card({ attr }) {
         </article>
         <article className="card">
           <figure className="card__header">
-            <img src="assets/img/card_bg01_03.jpg" alt="웹표준 사이트 만들기" />
+            <img src="assets/img/card_bg01_03.jpg" alt="" />
           </figure>
           <div className="card__body">
             <h3 className="tit">ROAD TRIP</h3>
