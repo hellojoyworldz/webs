@@ -1,3 +1,2 @@
-https://hellojoyworldz.github.io/myJS/
-https://hellojoyworldz.github.io/myJS/blog
-https://hellojoyworldz.github.io/myJS/game
+https://hellojoyworldz.github.io/myJS/blog<br/>
+https://hellojoyworldz.github.io/myJS/game<br/>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            OSEN=김채연 기자] 정산과 관련해 전 소속사 후크엔터테인먼트 측과 분쟁을 겪고 있는 이승기가 ‘2022 KBS 연기대상’에 출연해 진정성 있는 수상소감을 전했다.
+        </p>
+        <p>
+            지난 31일 서울 영등포구 KBS홀에서 전현무, 혜리, 정용화의 진행으로 ‘2022 KBS 연기대상’이 개최됐다. 이승기는 이날 베스트커플상, 대상을 수상해 2관왕을 차지했다.
+        </p>
+        <p>
+            먼저 이승기는 삭발 스타일로 등장해 이목이 집중됐다. 시선을 의식했는지 이승기도 “제가 머리를 짧게 깎은 것을 일신상의 이유나 개인적인 심경의 변화라고 추측하시는데 전혀 아니”라며 “지금 찍고있는 영화 ‘대가족’에서 주지스님 역을 맡았다. 오해 안 하셨으면 좋겠다”고 입을 열었다.
+        </p>
+
+        <button id="submit">Click me</button>
+        <hr>
+
+        <h2>select</h2>
+        <select name="" id="color">
+            <option value="">색상을 선택하세요.</option>
+            <option value="#ccc">silver</option>
+            <option value="#ebebeb">Light gray</option>
+            <option value="green">green</option>
+        </select>
+    </div>
+
+    <div>
+        <ul class="list">
+            <li>
+                <a href="">
+                    <span class="thumb">
+                        <img src="" alt="00 사진" width="1600px" height="400px">
+                    </span>
+                </a>
+            </li>
+            <li>
+
+            </li>
+            <li></li>
+        </ul>
+
+        <section class="section section__front" style="background:green;height: 300px;">
+            <h2 class="section__tit">프론트엔드</h2>
+            <p class="section__subtit">서브내용입니다</p>
+        </section>
+
+        <section class="section section__index" style="background:red;height: 300px;">
+            <h2 class="section__tit">웹스터디</h2>
+            <p class="section__subtit">서브내용입니다</p>
+        </section>
+
+        
+    </div>
+
+    <style>
+        .section{
+            padding: 60px 0;
+        }
+
+        .section__tit{
+            margin-bottom: 24px;
+            font-size: 72px;
+            line-height: 1em;
+            text-align:center;
+        }
+
+        .section__subtit{
+            text-align:center;
+            font-size: 16px;
+            line-height: 24px;
+            
+        }
+ 
+        .list li{
+            display: inline-block;
+            vertical-align:top;
+            width: 31.3334%;
+            margin: 1%;
+        }
+        .list .thumb img{
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+    <script>
+        /*
+        
+        이벤트
+        대상.addEventListener('이벤트', function(){할일});
+
+        대상의 value 확인 방법
+        대상.value
+        */
+
+        let clickBtn = document.getElementById('submit');
+        let myPara = document.querySelector('.container p');
+
+        clickBtn.addEventListener('click', function(){
+            myPara.style.backgroundColor="#ccc";
+        });
+
+        /* 
+        
+        myPara.addEventListener('mouseover', function(){
+            myPara.style.color='blue';
+        })
+
+        myPara.addEventListener('mouseout', function(){
+            this.style.color=''; // this myPara를 다시 찾지 않음
+        })
+        */
+
+        // mouseover, mouseout / mouseenter, mouseleave 구별을 해야한다.
+        myPara.addEventListener('mouseenter', function(){
+            this.style.color='blue';
+        });
+
+        myPara.addEventListener('mouseleave', function(){
+            this.style.color=''; 
+        });
+
+        const target = document.body;
+        const colorSelect = document.getElementById('color');
+        colorSelect.addEventListener('change', function(){
+            let selectedValue = this.value;
+            target.style.backgroundColor = selectedValue;
+        });
+        
+
+        
+
+    </script>
+</body>
+</html>

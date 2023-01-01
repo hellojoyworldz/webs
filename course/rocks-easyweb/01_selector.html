@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic Selector</title>
+</head>
+<body>
+    <h1 id="title">Basic Selector</h1>
+    <h2>Section title</h2>
+    <ul>
+        <li class="list">list item 1</li>
+        <li class="list">list item 2</li>
+        <li class="list">list item 3</li>
+        <li class="list">list item 4</li>
+    </ul>
+
+    <h2>Section title</h2>
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+    </ul>
+
+    <h2>Section title</h2>
+    <div id="box">
+        box level 1
+        <div>
+            box level 2
+            <div>
+                box level 3
+            </div>
+        </div>
+    </div>
+
+    <article>
+        <p>
+            OSEN=김채연 기자] 정산과 관련해 전 소속사 후크엔터테인먼트 측과 분쟁을 겪고 있는 이승기가 ‘2022 KBS 연기대상’에 출연해 진정성 있는 수상소감을 전했다.
+        </p>
+        <p>
+            지난 31일 서울 영등포구 KBS홀에서 전현무, 혜리, 정용화의 진행으로 ‘2022 KBS 연기대상’이 개최됐다. 이승기는 이날 베스트커플상, 대상을 수상해 2관왕을 차지했다.
+        </p>
+        <p>
+            먼저 이승기는 삭발 스타일로 등장해 이목이 집중됐다. 시선을 의식했는지 이승기도 “제가 머리를 짧게 깎은 것을 일신상의 이유나 개인적인 심경의 변화라고 추측하시는데 전혀 아니”라며 “지금 찍고있는 영화 ‘대가족’에서 주지스님 역을 맡았다. 오해 안 하셨으면 좋겠다”고 입을 열었다.
+        </p>
+    </article>
+    <script>
+        /*
+        
+        document.getElementById('아이디명'); -> 단일값
+        document.getElementsByTagName('태그명'); -> 유사배열
+        document.getElementsByClassName('클라스명'); -> 유사배열
+        document.querySelector('css선택자');-> 단일값
+        document.querySelectorAll('css선택자');-> 유사배열
+
+        스타일 적용
+        대상.style.css속성명 = '값'; //숫자면 따옴표 필요 없음
+
+        이벤트 적용
+        대상.addEventListener('이벤트종류', function (){...});
+
+        배열명[인덱스]
+        */
+
+        document.addEventListener('DOMContentLoaded', function(){
+
+        });
+
+        // 아이디명
+        document.getElementById('title').style.color='blue';
+        
+        // 태그명 
+        let sectionTitle = document.getElementsByTagName('h2');
+        for(let i=0; i< sectionTitle.length; i++){
+            sectionTitle[i].style.color='green';
+        }
+
+        //클라스명
+        let myList = document.getElementsByClassName('list');
+        let x = 0;
+        while(x<myList.length){
+            myList[x].style.backgroundColor='#ebebeb';
+            x++;
+        }
+
+        // css선택자
+        document.querySelector('#box > div > div').style.opacity = .5;
+        let myP = document.querySelectorAll('article p')
+        //대상.forEach(function(item, index, all){})
+        myP.forEach(function(item, index){
+            item.style.fontSize = '1.5em';
+        });
+    </script>
+</body>
+</html>
