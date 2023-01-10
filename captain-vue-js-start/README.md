@@ -232,6 +232,7 @@ new Vue({
 - 하위에서 상위로는 이벤트를 올려줌, 이벤트 발생
 
 ### 5-2. 컴포넌트 통신 규칙이 필요한 이유
+
 ![이미지](./readme-img/스크린샷%202023-01-08%20오후%209.46.36.png)
 AppHeader->LoginFrom->AppFooter->NavigationBar  
 N 방향 통신 : 특정 컴포넌트 변화에 따라서 나머지 컴포넌트가 유기적으로 데이터를 주고받았을 때 데이터의 방향을 예측하기 어렵다. 
@@ -241,16 +242,25 @@ N 방향 통신 : 특정 컴포넌트 변화에 따라서 나머지 컴포넌트
 
 ### 5-3. props 속성
 ### 5-4. props 속성의 특징
-<https://joshua1988.github.io/vue-camp/vue/props.html>
+### 5-5. [실습 안내]props 속성 실습
+### 5-6. [실습 풀이]props 속성 실습 풀이
+<https://joshua1988.github.io/vue-camp/vue/props.html>  
+`v-bind`
 ```html
 <div id="app">
-    <app-header v-bind:props="message2"></app-header>
+    <app-header v-bind:props="message"></app-header>
+    <app-content v-bind:props="num"></app-content>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     var appHeader = { //카멜케이스 네이밍
         template : '<h1>{{props}}</h1>', // Root에서 수정하면 바뀐다
+        props: ['props']
+    }
+
+    var appContent = { 
+        template : '<h1>{{props}}</h1>', 
         props: ['props']
     }
 
@@ -261,7 +271,7 @@ N 방향 통신 : 특정 컴포넌트 변화에 따라서 나머지 컴포넌트
         },
         data : {
             message : 'hi' ,
-            message2 : 'hi2'
+            num : 10
         }
     })
 </script>
@@ -269,13 +279,14 @@ N 방향 통신 : 특정 컴포넌트 변화에 따라서 나머지 컴포넌트
 `<하위컴포넌트 v-bind:props 속성 명="상위 컴포넌트 data 속성"></하위컴포넌트>` 
 `new Vue({components : {'컴포넌트 이름' :{props : ['props 속성 명']}}})` 
 
-### 5-5. [실습 안내]props 속성 실습
-### 5-6. [실습 풀이]props 속성 실습 풀이
 
 ### 5-7. event emit
-<https://joshua1988.github.io/vue-camp/vue/event-emit.html#%E1%84%8B%E1%85%B5%E1%84%87%E1%85%A6%E1%86%AB%E1%84%90%E1%85%B3-%E1%84%87%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A2%E1%86%BC-%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%92%E1%85%A7%E1%86%BC%E1%84%89%E1%85%B5%E1%86%A8>
+### 5-8. event emit으로 콘솔 출력하기
+<https://joshua1988.github.io/vue-camp/vue/event-emit.html#%E1%84%8B%E1%85%B5%E1%84%87%E1%85%A6%E1%86%AB%E1%84%90%E1%85%B3-%E1%84%87%E1%85%A1%E1%86%AF%E1%84%89%E1%85%A2%E1%86%BC-%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%92%E1%85%A7%E1%86%BC%E1%84%89%E1%85%B5%E1%86%A8>  
+`v-on`
 ```html
 <div id="app">
+    <!-- <app-header v-on:하위 컴포넌트 이벤트="상위 컴포넌트 메서드"></app-header> -->
     <app-header v-on:pass="logText"></app-header>
 </div>
 ```
@@ -303,4 +314,7 @@ new Vue({
 ```
 
 ![이미지](./readme-img/스크린샷%202023-01-08%20오후%2011.05.38.png)
-click을 하면 passEvent 함수가 실행되고, passEvent 함수는 $emit으로 pass 이벤트를 발생시켰다.
+![이미지](./readme-img/스크린샷%202023-01-08%20오후%2011.56.20.png)
+click을 하면 passEvent 함수가 실행되고, passEvent 함수는 $emit으로 pass 이벤트를 발생시켰다.  
+상위 컴포넌트에 logText 메서드를 생성하고, 하위 컴포넌트 이벤트 pass와 연결하였다.  
+click->passEvent함수실행->pass이벤트발생->logText메서드실행
