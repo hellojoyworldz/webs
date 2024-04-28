@@ -1,0 +1,120 @@
+.movie {
+    &__inner {
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 2%;
+
+            li {
+                width: 23%;
+                margin: 16px 0;
+                position: relative;
+
+                em {
+                    display: block;
+                    height: 80px;
+                    margin-bottom: 30px;
+                    font-family: var(--font-kor2);
+                }
+            }
+        }
+        a {
+            color: var(--white);
+        }
+    }
+    &__header {
+        margin: 16px 0;
+    }
+
+    &__title {
+        display: block;
+    }
+
+    &__sbj {
+        display: block;
+        margin-top: 8px;
+        font-family: var(--font-sub2);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__desc {
+        display: block;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        margin: 8px 0;
+        height: 67px;
+        font-family: var(--font-sub2);
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__date {
+        font-family: var(--font-sub2);
+    }
+
+    &__grade {
+        font-family: var(--font-sub2);
+    }
+
+    &__star {
+        background: #fff;
+        color: #000;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 800;
+        font-family: var(--font-sub2);
+    }
+}
+
+.movie__search {
+    margin-bottom: 100px;
+
+    .container {
+        position: relative;
+    }
+
+    h2 {
+        color: var(--white);
+        font-size: 40px;
+        text-indent: -9999px;
+        height: 0;
+    }
+    input {
+        background: #000;
+        border: 1px solid var(--white);
+        border-radius: 50px;
+        color: #fff;
+        width: 100%;
+        padding: 14px 30px;
+        font-family: var(--font-sub2);
+    }
+    button {
+        position: absolute;
+        right: 6px;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 0;
+        font-family: var(—-font-sub2);
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
