@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/jquery.fullPage.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <script src="assets/jquery.fullPage.js"></script>
+    
+    
+    
+</head>
+<body>
+    https://github.com/alvarotrigo/fullPage.js
+    <header style="position: absolute">
+        <h1></h1>
+        <nav></nav>
+    </header>
+    
+    <div id="fullpage">
+        <section class="section">
+            <div class="banner">
+                <img src="" alt="">
+            </div>
+        </section>
+        <section class="section">section01</section>
+        <section class="section">section02</section>
+        <section class="section">section03</section>
+        <footer class="section"></footer>
+    </div>
+    
+</body>
+<script>
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+        responsiveWidth: 1100,
+        afterResponsive: function(isResponsive){
+
+        }
+	});
+
+});
+
+</script>
+</html>
