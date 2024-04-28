@@ -1,0 +1,54 @@
+:root {
+    --size: clamp(10rem, 1rem + 40vmin, 30rem);
+    --gap: calc(var(--size) / 14);
+    --scroll-end: calc(-100% - var(--gap));
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+.contents__marquee{
+    display: grid;
+    align-content: center;
+    gap: var(--gap);
+    height: 100vh;
+    background: rgb(255, 243, 22);
+}
+
+.marquee__group{
+    display: flex;
+    gap: var(--gap);
+    
+}
+
+.marquee__list{
+    display: flex;
+    gap: var(--gap);
+    animation: scroll-x 60s linear infinite;
+}
+
+.marquee__list svg{
+    width: var(--size);
+    padding: calc(var(--size) / 10);
+    aspect-ratio: 16/9;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    box-sizing:border-box;
+}
+
+.marquee__list.reverse {
+    animation-direction: reverse;
+    animation-delay: -2s;
+}
+
+@keyframes scroll-x {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(var(--scroll-end));
+    }
+}
