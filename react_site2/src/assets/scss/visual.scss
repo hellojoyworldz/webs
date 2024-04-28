@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import "variables.scss";
+
+/* main visual */
+.visual {
+    &__header {
+        position: absolute;
+        z-index: 9;
+    }
+
+    &__tit {
+        margin: 90px 0 23px 0;
+        font-size: 110px;
+        color: $whiFff;
+        text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    &__txt {
+        font-size: 24px;
+        line-height: 1.5em;
+        color: $whiFff;
+        text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    &__view {
+        margin-top: 29px;
+        display: inline-block;
+        font-size: 18px;
+        line-height: 1em;
+        color: $whiFff;
+        background: #4857ec;
+
+        & a {
+            display: block;
+            padding: 15px 67px;
+        }
+    }
+
+    &__slide {
+        text-align: center;
+        font-size: 0px;
+    }
+
+    & .swiper-slide {
+        text-align: center;
+        & img {
+            height: auto;
+        }
+    }
+}

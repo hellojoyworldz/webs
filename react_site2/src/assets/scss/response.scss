@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+$in : auto;
+
+$mainPadding: 60px;
+$mainTitSiz : 32px;
+$mainTitSubSiz : 16px;
+
+$fontLev1 : 48px;
+$fontLev2 : $mainTitSiz;
+$fontLev3 : 22px;
+$fontLev4 : $mainTitSubSiz;
+$fontLev5 : 13px;
+
+$intervalLev1 : 32px;
+$intervalLev2 : 16px;
+
+
+@media (max-width: 1200px){
+    
+    .in{
+        width: $in;
+    }
+
+    .br__pc{
+        display: none;
+    }
+    
+    /* header */
+    .gnb__list{
+        & > li{
+            padding: 0 $intervalLev1;
+        }
+    }
+
+    /* footer */
+    .footer{
+        padding:$mainPadding 0;
+        text-align: center;
+
+        & .in{
+            padding-left: 10px;
+        }
+
+        &__info{
+            position: relative;
+            margin-bottom: $intervalLev1;
+        }
+    }
+
+    /* main common */
+    .cm-main__header{
+        margin-bottom: $intervalLev1;
+
+        & .tit{
+            margin-bottom: $intervalLev2;
+            font-size: $mainTitSiz;
+        }
+
+        & .txt{
+            font-size: $mainTitSubSiz;
+        }
+    }
+
+
+    /* main */
+    .visual{
+
+        &__header{
+            padding: 120px 0;
+        }
+        &__tit{
+            margin: 0 0 $intervalLev2 0;
+            font-size: $fontLev1;
+        }
+    
+        &__txt{
+            font-size: $mainTitSubSiz;
+        }
+    
+        &__view{
+            font-size: $mainTitSubSiz;
+    
+            & a{
+                padding: 10px 20px;
+            }
+        }
+
+        &__slide{
+            & > li img{
+                width: auto;
+                height: 500px;
+
+            }
+        }
+    }
+    
+
+    .mainStep{
+        padding: $mainPadding 0;
+
+        & .in{
+            padding-left: 10px;
+        }
+
+        &__header{
+            position: relative;
+            left: auto;
+            margin-bottom: $intervalLev1;
+            text-align: center;
+
+            & .tit{
+                margin-bottom: $intervalLev2;
+                font-size: $mainTitSiz;
+            }
+
+            & .titBullet{
+                margin: 0 auto 10px;
+            }
+
+            & .txt{
+                font-size: $mainTitSubSiz;
+            }
+        }
+
+        &__list{
+            top: -1%;
+
+            & .item{
+                margin: 1%;
+                width: 48%;
+            }
+
+            & .tit{
+                margin-bottom: $intervalLev2;
+                font-size: $fontLev3;
+            }
+
+            & .txt{
+                font-size: $fontLev4;
+            }
+        }
+    }
+
+    .mainGallery{   
+
+        padding: $mainPadding 0;
+
+        &__list{
+            margin: -1%;
+
+            & .item{
+                width: 48%;
+                margin: 1%;
+            }
+
+            & .tit{
+                font-size: $fontLev3;
+            }
+
+            & .view{
+                font-size: $fontLev5;
+            }
+
+            & .thumb {
+                & img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            
+        }
+    
+    }
+
+    .mainBlog{
+        padding: $mainPadding 0;
+
+         &__list{
+            margin: -1%;
+
+            & .thumb{
+                height: auto;
+            }
+
+            & .item{
+                margin: 1%;
+                width: 48%;
+            }
+
+            & .tit{
+                font-size: $fontLev3;
+
+                &::after{
+                    top: -5px;
+                }
+            }
+
+            & .txt{
+                font-size: $fontLev4;
+            }
+         }
+    }
+
+    .mainBanner{
+
+        & .tit{
+            margin-bottom: $intervalLev1;
+            font-size: $fontLev1;
+        }
+
+        & .txt{
+            margin-bottom: $intervalLev2;
+            font-size: $fontLev4;
+        }
+
+        & .view{
+            padding: 10px  20px;
+            font-size: $fontLev4;
+        }
+    }
+
+    .mainReview{
+        padding: $mainPadding 0;
+
+        &__list{
+            margin: -1%;
+
+            & .item{
+                margin: 1%;
+                width:31.3334%;
+                min-width: 300px;
+                height: auto;
+            }
+
+            & .txt{
+                font-size: $fontLev4;
+            }
+
+            & .tit{
+                font-size: $fontLev3;
+            }
+
+            & .th{
+                font-size: $fontLev5;
+            }
+
+            & .view{
+                font-size: $fontLev5;
+            }
+        } 
+    }
+   
+
+    
+
+}
+
+@media (max-width: 750px){
+    .footer{
+       &__sitemap {
+            min-height: auto;
+            
+            & > ul{
+                font-size:0px;
+                margin: -10px -1%;
+            }
+
+            & > ul > li{
+                width: 48%;
+                margin: 10px 1%;
+            }
+        } 
+    }
+}
+
+@media (max-width: 320px){
+    
+}
+
+
+

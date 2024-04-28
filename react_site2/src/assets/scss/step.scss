@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import "variables.scss";
+
+/* mainStep */
+.mainStep {
+    padding: $mainPadding 0;
+    background-color: $mainBg;
+
+    & .in {
+        position: relative;
+        padding-left: 413px;
+        box-sizing: border-box;
+    }
+
+    &__header {
+        position: absolute;
+        left: 20px;
+
+        & .tit {
+            margin-bottom: 26px;
+            font-size: 50px;
+            line-height: 120%;
+            color: $bla000;
+
+            &Bullet {
+                display: block;
+                margin-bottom: 10px;
+                padding: 3px 0;
+                width: 150px;
+                text-align: center;
+                font-size: 14px;
+                line-height: 140%;
+                color: $whiFff;
+                background: #ff3344;
+                border-radius: 30px;
+            }
+        }
+
+        & .txt {
+            font-size: 18px;
+            line-height: 150%;
+            color: $bla000;
+        }
+    }
+
+    &__list {
+        position: relative;
+        top: -26px;
+        font-size: 0px;
+
+        & .item {
+            display: inline-block;
+            vertical-align: top;
+            margin: 26px 10px;
+            width: 358px;
+        }
+
+        & .tit {
+            &:before {
+                content: "";
+                display: none;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                background: #ddd;
+            }
+
+            display: block;
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 1em;
+            color: $bla000;
+        }
+
+        & .txt {
+            display: -webkit-box;
+            font-size: 18px;
+            line-height: 150%;
+            color: $bla000;
+            word-break: normal;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+    }
+
+    &__list:first-child(1) .tit:before {
+    }
+}
